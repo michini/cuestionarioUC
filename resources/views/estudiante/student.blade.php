@@ -13,11 +13,11 @@
                                 @endforeach
                         </div>
                     @endif
-                    {!! Form::open(['route'=>'findCod','method'=>'POST','class'=>'form-horizontal']) !!}
+                    {!! Form::open(['route'=>'findCod','method'=>'POST','class'=>'form-horizontal','autocomplete'=>'off']) !!}
                     <div class="form-group">
                         {!! Form::label('codigo','Codigo:',['class'=>'col-xs-4 control-label']) !!}
                         <div class="col-xs-5">
-                            {!! Form::text('codigo',null,['class'=>'form-control']) !!}
+                            {!! Form::text('codigo',null,['class'=>'form-control','autocomplete'=>'off']) !!}
                         </div>
                     </div>
                     <div class="form-group">

@@ -19,7 +19,7 @@ class EstudianteController extends Controller
         $error = "Estudiante no existe";
         if(!$estudiante){
             return redirect()->back()->withErrors($error);
-        }elseif($estudiante->celular){
+        }elseif($estudiante->col_proc){
             return redirect()->back()->withErrors('Estudiante ya entrevistado');
         }
         return view('quiz.quiz',compact('estudiante'));
